@@ -1,7 +1,9 @@
 # Up For A Little Challenge?
 **Category:** forensic
 
-This challenge does not provide any clue and assume that we know what we are doing. Okay let's open Begin Hack.jpgthe newly downloaded file
+This challenge does not provide any clue and assume that we know what we are doing.
+
+let's open Begin Hack.jpg the newly downloaded file
 
 ```bash
 eog Begin\ Hack.jpg
@@ -40,19 +42,19 @@ This time we try to examine what is the .Processing.cerb4 file
 file .Processing.cerb4
 ```
 
-Once seen, it turns out that this file type is Zip . therefore we need to change / add extensions .zipbehind file names. Then do the extracting .
-
+Once seen, it turns out that this file type is Zip .  we do the extracting .
+```
 mv .Processing.cerb4 .Processing.cerb4.zip
 unzip .Processing.cerb4.zip
 ```
 
-When trying to extract this file, we are asked to enter a password. Then where can we get the password?
+When trying to extract this file, we are asked to enter a password. 
 
 Okay, now we go back to the first file and see that there is a password that can be used to extract the file.
 
 cd ..
 strings Begin\ Hack.jpg | more
-Nothing Is As It Seems
+#Nothing Is As It Seems#
 
 Then we extract the file .Processing.cerb4.zipwith the password that we got. Finally, we open the extracted file .
 
