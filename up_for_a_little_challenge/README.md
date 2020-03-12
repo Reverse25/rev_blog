@@ -5,7 +5,7 @@ Begin Hack
 
 After opening with the image viewer there is no meaningful information and only ordinary images.
 
-Always pay attention to the file type of image must have done Steganography, the message is hidden in the picture ( Read here ). For that we need to check what information is in this picture in the form of strings (characters that can be read by humans).
+we do the string operation on the file
 
 strings Begin \ Hack.jpg | more
 Notice a few words that can be read when we scroll . There is one URL, open that URL and download the file there.
